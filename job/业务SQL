@@ -1,0 +1,9 @@
+1.付费用户
+order_state = 1 and wx_app_type!=10 and price >=0
+and ((use_collection = 1 and settle_status = 2  )  or  (use_collection = 0 ) )
+2.店铺绑定运营者号
+db_ex_conf.t_admin.users（核心业务库）
+3.店铺公司认证信息
+db_ex_shop_authentic.t_authentic（次级业务库）
+4.每个店铺公众号粉丝数
+db_ex_subscribe.t_sync_record（消息推送库）
